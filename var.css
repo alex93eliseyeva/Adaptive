@@ -1,0 +1,25 @@
+:root {
+  --main-color: #FFFFFF;
+  --border-color: rgba(255, 255, 255, 0.5);
+  --link-color: #15A9CB;
+  --before-bg-color: rgba(47, 50, 75, 0.85);
+  --box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+}
+
+.header {
+  --heading-color: rgba(255, 255, 255, 0.86);
+  --description-text-color: rgba(255, 255, 255, 0.75);
+}
+
+.section {
+  --section-bg-color: #F9F9F9;
+  --section-text-color: #383A4C;
+  --features-count-color: #23C7EC;
+  --section-subheading-color: rgba(255, 255, 255, 0.8);
+  --section-link-color: #4A76A8;
+}
+
+.footer {
+  --footer-bg-color: #2F324B;
+  --footer-gradient: linear-gradient(to bottom, #2F324B 63%, #2A2C3F 37%);
+}

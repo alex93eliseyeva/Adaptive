@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <img class="header__logo" src="header/img/logo.svg" alt="Логотип компании">
+    
+        <address class="header__contacts">
+          <p class="contacts__tel"><a class="contacts__link" href="tel:+79625561234">+7 (962) 556 - 1234</a></p>
+          <p class="contacts__text"><a class="contacts__link contacts__link_style_border" href="#form">Перезвоните мне</a></p>
+          <a class="contacts__link-img" href="tel:+79625561234"><img src="header/img/phone.svg" alt="Знак телефонной трубки" class="contacts__img"></a>
+        </address>
+      </div>
+
+      <h1 class="header__heading header__text">Заголовок c уникальным торговым предложение по системе 4U</h1>
+
+      <p class="header__description">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более <span class="header__span">менее осмысленного текста рыбы на русском языке, а начинающему</span>.</p>
+
+      <a class="header__link-more" href="#features">Подробнее</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section features" id="features">
+      <div class="container">
+        <h2 class="section__features-heading">Уникальный заголовок для преимущества компании</h2>
+
+        <h3 class="section__features-subheading">О нас</h3>
+
+        <p class="section__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
+
+        <div class="section__wrapper">
+          <div class="section__features-wrapper">
+            <p class="section__features-text section__features-text_count_one">Первое  целевое преимущество</p>
+          </div>
+
+          <div class="section__features-wrapper">
+            <p class="section__features-text section__features-text_count_two">Второе  целевое преимущество</p>
+          </div>
+
+          <div class="section__features-wrapper">
+            <p class="section__features-text section__features-text_count_three">Третье  целевое преимущество</p>
+          </div>
+
+          <div class="section__features-wrapper">
+            <p class="section__features-text section__features-text_count_four">Четвертое  целевое преимущество</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form " id="form">
+      <div class="container">
+        <h2 class="section__form-heading">Остались вопросы?</h2>
+
+        <h3 class="section__form-subheading">Оставьте номер телефона, и мы перезвоним вам</h3>
+    
+        <form class="section__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="name"></label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя">
+          
+            <label class="form__label" for="tel"></label>
+            <input class="form__input" type="number" name="tel" id="tel" placeholder="Телефон">
+          
+            <label class="form__label" for="email"></label>
+            <input class="form__input" type="text" name="email" id="email" placeholder="E-mail">
+          </fieldset>
+
+          <button class="form__button" type="submit">Позвоните мне</button>
+        </form>
+
+        <p class="section__agreement">Я даю своё <a href="#" class="section__agreement-link" target="_blank">согласие</a> на обработку моих персональных данных.</p>
+      </div>
+    </section>  
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__wrapper">
+          <img class="footer__logo" src="header/img/logo.svg" alt="Логотип компании">
+
+          <ul class="footer__list">
+            <li class="footer__item footer__text">&#169; 2022 XXXcompany. </li>
+            <li class="footer__item footer__text">Все права защищены.</li>
+          </ul>
+        </div>
+
+        <p class="footer__text footer__text_place_last">Сделано Ивановым Иваном</p>
+
+        <address class="footer__contacts">
+          <p class="contacts__tel"><a class="contacts__link" href="tel:+79625561234">+7 (962) 556 - 1234</a></p>
+          <p class="contacts__text"><a class="contacts__link contacts__link_style_border" href="#form">Перезвоните мне</a></p>
+          <a class="contacts__link-img" href="tel:+79625561234"><img src="header/img/phone.svg" alt="Знак телефонной трубки" class="contacts__img"></a>
+        </address>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
