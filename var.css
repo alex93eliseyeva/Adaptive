@@ -21,6 +21,6 @@
 
 .footer {
   --footer-bg-color: #2F324B;
-  --footer-text-color: rgba(255, 255, 255, 1);
+  --footer-text-color: rgba(255, 255, 255, 0.5);
   --footer-gradient: linear-gradient(to bottom, #2F324B 63%, #2A2C3F 37%);
 }
