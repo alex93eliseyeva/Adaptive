@@ -1,0 +1,55 @@
+.contacts {
+  display: block;
+  max-width: 212px;
+  text-align: center;
+}
+
+.contacts__link {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--main-color);
+  font-style: normal;
+  margin-bottom: 3px;
+}
+
+.contacts__call {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-color);
+  font-style: normal;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contacts__img {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .contacts__link {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 4px;
+  }
+
+  .contacts__call {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__span {
+    display: none;
+  }
+
+  .contacts__call {
+    display: none;
+  }
+
+  .contacts__img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}

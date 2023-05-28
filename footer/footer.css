@@ -1,12 +1,10 @@
 .footer {
-  max-width: 1600px;
+  max-width: 100%;
   padding: 45px 0;
   background-color: var(--footer-bg-color);
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,13 +16,12 @@
   align-items: center;
 }
 
-.footer__logo {
-  width: 68px;
-  height: 68px;
-}
-
 .footer__item {
   margin-bottom: 2px;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+  color: var(--main-color);
 }
 
 .footer__item:last-child {
@@ -42,101 +39,46 @@
   text-align: center;
 }
 
-.contacts__tel {
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 3px;
-}
-
-.contacts__text {
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.contacts__link {
-  color: var(--main-color);
-  font-style: normal;
-}
-
-.contacts__link_style_border {
-  padding-bottom: 1px;
-  border-bottom: 1px solid var(--main-color);
-}
-
-.contacts__link-img {
-  display: none;
-}
-
 @media (max-width: 1024px) {
   .footer {
-    max-width: 1024px;
     padding: 37px 0 49px;
   }
 
-  .footer-container {
-    max-width: 964px;
-  }
-
-  .footer__logo {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .contacts__tel {
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 4px;
-  }
-  
-  .contacts__text {
-    font-size: 13px;
-    line-height: 15px;
-  }
-}
-
-@media (max-width: 320px) {
-  .footer {
-    max-width: 320px;
-    padding: 25px 0 15px;
-    background-color: linear-gradient(to bottom, #2F324B 63%, #2A2C3F 37%);
-  }
-
-  .footer-container {
-    max-width: 320px;
-    flex-wrap: wrap;
-    row-gap: 25px;
-    padding: 0 15px;
-  }
-
-  .footer__logo {
-    width: 30px;
-    height: 30px;
+  .footer__wrapper {
+    gap: 21px;
   }
 
   .footer__text {
+    color: var(--footer-text-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 0 15px;
+    background-image: linear-gradient(#2F324B 60%, #2A2C3F 60%, #2A2C3F 40%);
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .footer__wrapper {
+    order: 0;
+  }
+
+  .footer__item {
     font-size: 8px;
     line-height: 11px;
   }
 
-  .footer__text_place_last {
-    order: 1;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 17px;
+  .footer__text {
+    order: 2;
     padding-left: 65px;
   }
 
-  .contacts__tel {
-    display: none;
-  }
-
-  .contacts__text {
-    display: none;
-  }
-
-  .contacts__link-img {
-    display: block;
-    width: 24px;
-    height: 24px;
+  .footer__contacts {
+    order: 1;
   }
 }

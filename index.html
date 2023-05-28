@@ -11,14 +11,13 @@
 
 <body> 
   <header class="header">
-    <div class="container">
+    <div class="container header-container">
       <div class="header__wrapper">
-        <img class="header__logo" src="header/img/logo.svg" alt="Логотип компании">
+        <img class="header__logo logo" src="header/img/logo.svg" alt="Логотип компании">
     
-        <address class="header__contacts">
-          <p class="contacts__tel"><a class="contacts__link" href="tel:+79625561234">+7 (962) 556 - 1234</a></p>
-          <p class="contacts__text"><a class="contacts__link contacts__link_style_border" href="#form">Перезвоните мне</a></p>
-          <a class="contacts__link-img" href="tel:+79625561234"><img src="header/img/phone.svg" alt="Знак телефонной трубки" class="contacts__img"></a>
+        <address class="header__contacts contacts">
+          <a class="contacts__link" href="tel:+79625561234"><img class="contacts__img" src="header/img/phone.svg" alt="Знак телефонной трубки"><span class="contacts__span">+7 (962) 556 - 1234</span></a>
+          <a class="contacts__call" href="#form">Перезвоните мне</a>
         </address>
       </div>
 
@@ -35,27 +34,19 @@
       <div class="container">
         <h2 class="section__features-heading">Уникальный заголовок для преимущества компании</h2>
 
-        <h3 class="section__features-subheading">О нас</h3>
+        <p class="section__features-subheading">О нас</p>
 
         <p class="section__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
 
-        <div class="section__wrapper">
-          <div class="section__features-wrapper">
-            <p class="section__features-text section__features-text_count_one">Первое  целевое преимущество</p>
-          </div>
+        <ul class="section__list">
+          <li class="section__item"><span>Первое  целевое преимущество</span></li>
 
-          <div class="section__features-wrapper">
-            <p class="section__features-text section__features-text_count_two">Второе  целевое преимущество</p>
-          </div>
+          <li class="section__item"><span>Второе  целевое преимущество</span></li>
 
-          <div class="section__features-wrapper">
-            <p class="section__features-text section__features-text_count_three">Третье  целевое преимущество</p>
-          </div>
+          <li class="section__item"><span>Третье  целевое преимущество</span></li>
 
-          <div class="section__features-wrapper">
-            <p class="section__features-text section__features-text_count_four">Четвертое  целевое преимущество</p>
-          </div>
-        </div>
+          <li class="section__item"><span>Четвертое  целевое преимущество</span></li>
+        </ul>
       </div>
     </section>
 
@@ -63,7 +54,7 @@
       <div class="container">
         <h2 class="section__form-heading">Остались вопросы?</h2>
 
-        <h3 class="section__form-subheading">Оставьте номер телефона, и мы перезвоним вам</h3>
+        <p class="section__form-subheading">Оставьте номер телефона, и мы перезвоним вам</p>
     
         <form class="section__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <fieldset class="form__fieldset">
@@ -85,22 +76,21 @@
     </section>  
 
     <footer class="footer">
-      <div class="footer-container">
+      <div class="container footer-container">
         <div class="footer__wrapper">
-          <img class="footer__logo" src="header/img/logo.svg" alt="Логотип компании">
+          <img class="footer__logo logo" src="header/img/logo.svg" alt="Логотип компании">
 
           <ul class="footer__list">
-            <li class="footer__item footer__text">&#169; 2022 XXXcompany. </li>
-            <li class="footer__item footer__text">Все права защищены.</li>
+            <li class="footer__item">&#169; 2022 XXXcompany. </li>
+            <li class="footer__item">Все права защищены.</li>
           </ul>
         </div>
 
-        <p class="footer__text footer__text_place_last">Сделано Ивановым Иваном</p>
+        <p class="footer__text">Сделано Ивановым Иваном</p>
 
-        <address class="footer__contacts">
-          <p class="contacts__tel"><a class="contacts__link" href="tel:+79625561234">+7 (962) 556 - 1234</a></p>
-          <p class="contacts__text"><a class="contacts__link contacts__link_style_border" href="#form">Перезвоните мне</a></p>
-          <a class="contacts__link-img" href="tel:+79625561234"><img src="header/img/phone.svg" alt="Знак телефонной трубки" class="contacts__img"></a>
+        <address class="footer__contacts contacts">
+          <a class="contacts__link" href="tel:+79625561234"><img class="contacts__img" src="header/img/phone.svg" alt="Знак телефонной трубки"><span class="contacts__span">+7 (962) 556 - 1234</span></a>
+          <a class="contacts__call" href="#form">Перезвоните мне</a>
         </address>
       </div>
     </footer>

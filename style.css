@@ -1,36 +1,37 @@
 @import "var.css";
 @import "header/header.css";
+@import "contacts.css";
 @import "features/features.css";
 @import "form/form.css";
 @import "footer/footer.css";
 
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url("fonts/Roboto-Black.woff2"),
-      url("fonts/Roboto-Black.woff");
-  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+      url("fonts/Roboto-Regular.woff")  format("woff");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url("fonts/Roboto-Bold.woff2"),
-      url("fonts/Roboto-Bold.woff");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url("fonts/Roboto-Medium.woff2"),
-      url("fonts/Roboto-Medium.woff");
+  font-family: "Roboto", sans-serif;
+  src: url("fonts/Roboto-Medium.woff2") format("woff2"),
+      url("fonts/Roboto-Medium.woff")  format("woff");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url("fonts/Roboto-Regular.woff2"),
-      url("fonts/Roboto-Regular.woff");
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  src: url("fonts/Roboto-Bold.woff2") format("woff2"),
+      url("fonts/Roboto-Bold.woff")  format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("fonts/Roboto-Black.woff2") format("woff2"),
+      url("fonts/Roboto-Black.woff")  format("woff");
+  font-weight: 900;
 }
 
 html {
@@ -47,7 +48,7 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
@@ -86,3 +87,40 @@ iframe {
   border: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 320px;
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  width: 68px;
+  height: 68px;
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}

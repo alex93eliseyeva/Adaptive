@@ -1,5 +1,5 @@
 .section {
-  max-width: 1600px;
+  max-width: 100%;
   padding: 70px 0 70px;
 }
 
@@ -67,8 +67,8 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  min-height: 44px;
-  padding-left: 24px;
+  color: var(--main-color);
+  padding: 9px 24px;
 }
 
 .form__button {
@@ -128,8 +128,7 @@
   .form__input {
     font-size: 20px;
     line-height: 23px;
-    min-height: 39px;
-    padding-left: 23px;
+    padding: 8px 23px;
   }
 
   .section__agreement {
@@ -138,7 +137,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .section {
     padding: 30px 0;
   }
@@ -172,8 +171,7 @@
   .form__input {
     font-size: 14px;
     line-height: 16px;
-    min-height: 28px;
-    padding-left: 18px;
+    padding: 6px 18px;
   }
   
   .form__button {

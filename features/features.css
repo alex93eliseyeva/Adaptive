@@ -1,16 +1,10 @@
 .section {
-  max-width: 1600px;
+  max-width: 100%;
   padding: 70px 0 70px;
 }
 
 .features {
   background-color: var(--section-bg-color);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .section__features-heading {
@@ -53,85 +47,46 @@
 
 .section__text {
   display: block;
-  padding: 0 237px 0 239px;
+  max-width: 724px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: var(--section-text-color);
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
 }
 
-.section__wrapper {
+.section__list {
   display: flex;
-  flex-basis: 196px;
-  justify-content: space-between;
   gap: 50px;
-  padding: 0 133px;
+  padding: 0 103px;
   margin: 0;
+  counter-reset: count 0;
 }
 
-.section__features-text {
+.section__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
 }
 
-.section__features-text_count_one:before {
-  content: '1';
+.section__item:before {
+  counter-increment: count;
+  content: counter(count);
   display: block;
   color: var(--section-bg-color);
   font-size: 57px;
   line-height: 100%;
   width: 122px;
   height: 122px;
-  background-color: #23C7EC;
+  background-color: var(--features-count-color);
   border-radius: 50%;
   padding: 32px 44px;
-  margin: 0 auto 16px;
-}
-
-.section__features-text_count_two:before {
-  content: '2';
-  display: block;
-  color: var(--section-bg-color);
-  font-size: 57px;
-  line-height: 100%;
-  width: 122px;
-  height: 122px;
-  background-color: #23C7EC;
-  border-radius: 50%;
-  padding: 32px 44px;
-  margin: 0 auto 16px;
-}
-
-.section__features-text_count_three:before {
-  content: '3';
-  display: block;
-  color: var(--section-bg-color);
-  font-size: 57px;
-  line-height: 100%;
-  width: 122px;
-  height: 122px;
-  background-color: #23C7EC;
-  border-radius: 50%;
-  padding: 32px 44px;
-  margin: 0 auto 16px;
- }
-
-.section__features-text_count_four:before {
-  content: '4';
-  display: block;
-  color: var(--section-bg-color);
-  font-size: 57px;
-  line-height: 100%;
-  width: 122px;
-  height: 122px;
-  background-color: #23C7EC;
-  border-radius: 50%;
-  padding: 32px 44px;
-  margin: 0 auto 16px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -158,76 +113,56 @@
   }
 
   .section__text {
+    max-width: 666px;
     font-size: 16px;
     line-height: 23px;
   }
 
-  .section__wrapper {
-    flex-basis: 180px;
+  .section__list {
     justify-content: space-between;
-    padding: 0 76px;
+    padding: 0;
     margin: 0;
   }
 
-  .section__features-text {
+  .section__item {
     font-size: 18px;
     line-height: 25px;
   }
 
-  .section__features-text_count_one:before {
+  .section__item:before {
     font-size: 52px;
     line-height: 73px;
     padding: 22px 31px;
-    margin: 0 auto 26px;
-  }
-
-  .section__features-text_count_two:before {
-    font-size: 52px;
-    line-height: 73px;
-    padding: 22px 31px;
-    margin: 0 auto 26px;
-  }
-
-  .section__features-text_count_three:before {
-    font-size: 52px;
-    line-height: 73px;
-    padding: 22px 31px;
-    margin: 0 auto 26px;
-  }
-
-  .section__features-text_count_four:before {
-    font-size: 52px;
-    line-height: 73px;
-    padding: 22px 31px;
-    margin: 0 auto 26px;
+    margin-bottom: 26px;
+    width: 104px;
+    height: 104px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .section {
     padding: 30px 0 60px;
   }
 
-  .section__heading {
+  .section__features-heading {
     font-size: 20px;
     line-height: 23px;
-    padding: 0 15px;
     margin-bottom: 15px;
   }
 
-  .section__subheading {
+  .section__features-subheading {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 0 0 26px;
   }
 
-  .section__subheading:before {
+  .section__features-subheading:before {
     width: 19px;
     height: 1;
     margin-right: 21px;
   }
   
-  .section__subheading:after {
+  .section__features-subheading:after {
     width: 19px;
     height: 1;
     margin-right: 21px;
@@ -236,11 +171,11 @@
   .section__text {
     font-size: 12px;
     line-height: 17px;
-    padding: 0 15px;
+    max-width: 290px;
     margin-bottom: 40px;
   }
 
-  .section__wrapper {
+  .section__list {
     flex-direction: column;
     column-gap: 40px;
     padding: 0 77px;
