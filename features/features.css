@@ -1,10 +1,10 @@
 .section {
   max-width: 100%;
-  padding: 70px 0 70px;
 }
 
 .features {
   background-color: var(--section-bg-color);
+  padding: 70px 0 71px;
 }
 
 .section__features-heading {
@@ -12,7 +12,8 @@
   font-size: 35px;
   line-height: 41px;
   text-align: center;
-  margin: 0 0 26px 0;
+  margin: 0 0 26px 0;  
+  padding-right: 3px;
   color: var(--section-text-color);
 }
 
@@ -22,6 +23,7 @@
   line-height: 26px;
   text-align: center;
   margin: 0 0 34px 0;
+  padding-right: 1px;
   color: var(--section-text-color);
 }
 
@@ -53,13 +55,14 @@
   line-height: 25px;
   text-align: center;
   color: var(--section-text-color);
-  margin: 0 auto 50px;
+  margin: 0 auto 58px;
+  padding-right: 1px;
 }
 
 .section__list {
   display: flex;
   gap: 50px;
-  padding: 0 103px;
+  padding: 0 133px 0;
   margin: 0;
   counter-reset: count 0;
 }
@@ -72,6 +75,7 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+  min-width: 196px;
 }
 
 .section__item:before {
@@ -85,7 +89,7 @@
   height: 122px;
   background-color: var(--features-count-color);
   border-radius: 50%;
-  padding: 32px 44px;
+  padding: 38px 44px;
   margin-bottom: 16px;
 }
 

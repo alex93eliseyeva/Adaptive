@@ -1,9 +1,9 @@
 .section {
   max-width: 100%;
-  padding: 70px 0 70px;
 }
 
 .form {
+  padding: 71px 0 70px;
   background-image: url("img/contacts.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +25,8 @@
   font-size: 35px;
   line-height: 41px;
   text-align: center;
-  margin: 0 0 17px 0;
+  margin: 0 0 18px 0;
+  padding-right: 26px;
   color: var(--main-color);
 }
 
@@ -40,8 +41,8 @@
 
 .section__form {
   display: block;
-  max-width: 423px;
-  margin: 0 auto 50px;
+  max-width: 426px;
+  margin: 0 auto 51px;
 }
 
 .form__fieldset {
@@ -50,8 +51,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 21px;
-  margin-bottom: 50px;
+  gap: 18px;
+  margin-bottom: 51px;
 }
 
 .form__label {
@@ -79,7 +80,7 @@
   font-weight: 500;
   line-height: 23px;
   text-align: center;
-  padding: 11px 38px;
+  padding: 12px 40px;
   border-radius: 50px;
   border-style: none;
   box-shadow: var(--box-shadow);

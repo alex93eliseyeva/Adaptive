@@ -33,21 +33,21 @@
   font-size: 52px;
   line-height: 61px;
   text-align: center;
-  margin: 0 0 35px 0;  /*32px*/
+  margin: 0 0 32px 0;
+  padding-right: 1px;
   color: var(--heading-color);
-  /*padding-left: 58px;*/
 }
 
 .header__description {
   display: block;
-  max-width: 960px; /*1002px*/
+  max-width: 960px;
   font-weight: 400;
   font-size: 22px;
   line-height: 31px;
   text-align: center;
   color: var(--description-text-color);
   margin: 0 auto 90px;
-  /*padding-left: 58px;*/
+  padding-right: 1px;
 }
 
 .header__link-more {
