@@ -75,19 +75,21 @@
   }
 
   .header__heading {
+    max-width: 780px;
     font-size: 40px;
     line-height: 47px;
-    margin-bottom: 28px;
+    margin: 0 auto 28px;
   }
 
   .header__description {
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 60px;
+    max-width: 764px;
+    margin-bottom: 58px;
   }
 
   .header__link-more {
-    padding: 11px 49px;
+    padding: 11px 49px 12px;
     max-width: 202px;
   }
 }

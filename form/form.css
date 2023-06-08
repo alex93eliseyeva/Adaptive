@@ -101,18 +101,22 @@
 
 @media (max-width: 1024px) {
   .form {
-    padding-bottom: 56px;
+    padding-bottom: 58px;
   }
   
   .section__form-heading {
     font-size: 32px;
     line-height: 38px;
+    padding-right: 7px;
     margin-bottom: 16px;
   }
 
   .section__form-subheading {
     font-size: 20px;
     line-height: 23px;
+    max-width: 484px;
+    padding-left: 16px;
+    margin: 0 auto 47px;
   }
 
   .section__form {
@@ -121,7 +125,8 @@
   }
 
   .form__fieldset {
-    gap: 20px;
+    gap: 18px;
+    margin-bottom: 49px;
   }
 
   .form__input {
